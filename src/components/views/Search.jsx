@@ -49,7 +49,8 @@ const Search = () => {
     return (
         <div>
             <Container>
-                <ListFlickr 
+                <ListFlickr
+                    query={query} 
                     data={data} 
                     loading={loading} 
                     page={page}
