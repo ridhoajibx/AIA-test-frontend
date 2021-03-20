@@ -35,6 +35,7 @@ export default function Header() {
                             className="mr-sm-2"
                             onChange={handleChange}
                             value={searchFlickr}
+                            required={true}
                         />
                         <Button type="submit" className="d-none d-md-block" variant="primary">Search</Button>
                     </Form>
