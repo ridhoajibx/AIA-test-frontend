@@ -24,7 +24,7 @@ export default function Header() {
 
     return (
         <div>
-            <Navbar bg="dark" expand="md" variant="dark">
+            <Navbar bg="dark" expand="md" variant="dark" className="fixed-top shadow-sm">
                 <Navbar.Brand href="/">Flickr API Consume</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="my-sm-2" id="basic-navbar-nav">
