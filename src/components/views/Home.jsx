@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-// import Header from "../Headers/Header";
 import { Container } from "react-bootstrap";
 import ListFlickr from "./ListFlickr";
 
@@ -47,7 +46,6 @@ export default function Home(props) {
     
     return (
         <div>
-            {/* <Header /> */}
             <Container>
                 <ListFlickr 
                     data={data} 
