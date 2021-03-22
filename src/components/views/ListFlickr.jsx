@@ -6,7 +6,7 @@ import Paginate from '../Pagination/Paginate'
 export default function ListFlickr({ data, loading, page, nextPage, prevPage, query }) {
     return (
         <div>
-            <Row>
+            <Row className="mt-5 pt-2">
                 <h4 className="px-4 my-4 text-uppercase font-weight-bold">{query ? `Search : ${query}` : 'Recent Images'}</h4>
             </Row>
             <Paginate 
