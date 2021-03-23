@@ -58,6 +58,20 @@ const ShowDetail = () => {
                                     <Card.Text className="text-capitalize font-weight-bold">
                                         Owner : {data.owner.realname ? data.owner.realname : "Owner name is undifined"}
                                     </Card.Text>
+                                    <Card.Text className="text-muted container">
+                                        <Row>
+                                            {!data.tags.tag.length ?
+                                                <div>
+                                                    #notags
+                                                </div> :
+                                                data.tags.tag.map((tag, i) => (
+                                                    <div className="mx-1" key={i}>
+                                                        #{ tag.raw}
+                                                    </div>
+                                                ))
+                                            }
+                                        </Row>
+                                    </Card.Text>
                                     <Card.Text className="text-muted">
                                         Description : {data.description._content ? ReactHtmlParser(data.description._content) : "Description is undifined"}
                                     </Card.Text>
