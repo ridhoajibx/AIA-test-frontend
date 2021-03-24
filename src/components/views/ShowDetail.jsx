@@ -66,7 +66,7 @@ const ShowDetail = () => {
                                                 </div> :
                                                 data.tags.tag.map((tag, i) => (
                                                     <div className="mx-1" key={i}>
-                                                        #{ tag.raw}
+                                                        <Link className="badge bg-info text-light" to={`/search/${tag.raw}`}>#{ tag.raw}</Link>
                                                     </div>
                                                 ))
                                             }
